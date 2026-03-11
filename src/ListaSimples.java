@@ -4,16 +4,16 @@ public class ListaSimples implements ListaOperacoes {
     public ListaSimples(int tamanho) {
         this.lista = new String[tamanho];
         this.tamanho = 0;
-        System.out.println("Lista criada com sucesso! Existem " + tamanho + " posições disponíveis.");
+        System.out.println("Lista criada com sucesso Existem " + tamanho + " posições disponíveis");
     }
 
     public void adicionarElemento(String elemento) {
         if (tamanho < lista.length) {
             lista[tamanho] = elemento;
             tamanho++;
-            System.out.println("Elemento " + elemento + " adicionado com sucesso!");
+            System.out.println("Elemento " + elemento + " adicionado com sucesso");
         } else {
-            System.out.println("Não há espaço disponível na lista.");
+            System.out.println("Não tem espaço disponível na lista");
         }
     }
 
@@ -57,9 +57,9 @@ public class ListaSimples implements ListaOperacoes {
             }
         }
         if(removido) {
-            System.out.println("O elemento " + elemento + " foi removido com sucesso!");
+            System.out.println("O elemento " + elemento + " foi removido com sucesso");
         } else {
-            System.out.println("O elemento " + elemento + " não existe na lista.");
+            System.out.println("O elemento " + elemento + " não existe na lista");
         }
     }
 
@@ -73,9 +73,9 @@ public class ListaSimples implements ListaOperacoes {
             }
         }
         if(encontrado) {
-            System.out.println("O elemento " + elemento + " existe na lista!");
+            System.out.println("O elemento " + elemento + " existe na lista");
         } else {
-            System.out.println("O elemento " + elemento + " não existe na lista.");
+            System.out.println("O elemento " + elemento + " não existe na lista");
         }
     }
 
