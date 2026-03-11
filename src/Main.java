@@ -11,8 +11,5 @@ public class Main {
         listaSimples.removerElemento("Óleo");
         listaSimples.buscarElemento("Óleo");
         listaSimples.exibirElementos();
-
-        listaSimples.inserir(1, "Macarrão");
-        listaSimples.exibirElementos();
     }
 }
