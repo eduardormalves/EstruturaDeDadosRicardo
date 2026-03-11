@@ -4,7 +4,7 @@ public class ListaDinamica implements ListaOperacoes {
 
     public ListaDinamica() {
         this.inicio = new No(null);
-        System.out.println("Lista dinâmica criada com sucesso!");
+        System.out.println("Lista dinamica criada");
     }
 
     public void adicionarElemento(String elemento) {
@@ -26,7 +26,7 @@ public class ListaDinamica implements ListaOperacoes {
     public void exibir() {
 
         if (inicioEstaVazio()) {
-            System.out.println("Não existem elementos na lista dinâmica.");
+            System.out.println("Não tem elementos na lista dinamica");
             return;
         }
 
@@ -45,13 +45,13 @@ public class ListaDinamica implements ListaOperacoes {
     public void removerElemento(String elemento) {
 
         if (inicioEstaVazio()) {
-            System.out.println("Não há elementos a serem removidos.");
+            System.out.println("Não existem elementos para serem removidos");
             return;
         }
 
         if (this.inicio.getConteudo().equals(elemento)) {
             this.inicio = this.inicio.getProx();
-            System.out.println("Elemento " + elemento + " removido!");
+            System.out.println("Elemento " + elemento + " removido");
             return;
         }
 
@@ -61,20 +61,20 @@ public class ListaDinamica implements ListaOperacoes {
 
             if (aux.getProx().getConteudo().equals(elemento)) {
                 aux.setProx(aux.getProx().getProx());
-                System.out.println("Elemento " + elemento + " removido!");
+                System.out.println("Elemento " + elemento + " removido");
                 return;
             }
 
             aux = aux.getProx();
         }
 
-        System.out.println("Elemento não encontrado.");
+        System.out.println("Elemento não encontrado");
     }
 
     public boolean procurarElemento(String elemento) {
 
         if (inicioEstaVazio()) {
-            System.out.println("Não há elementos a serem procurados.");
+            System.out.println("Não tem elementos para serem procurados");
             return false;
         }
 
@@ -83,14 +83,14 @@ public class ListaDinamica implements ListaOperacoes {
         while (aux != null) {
 
             if (aux.getConteudo().equals(elemento)) {
-                System.out.println("Elemento " + elemento + " encontrado!");
+                System.out.println("Elemento " + elemento + " encontrado");
                 return true;
             }
 
             aux = aux.getProx();
         }
 
-        System.out.println("Elemento " + elemento + " não existe na lista.");
+        System.out.println("Elemento " + elemento + " não existe na lista");
         return false;
     }
 
